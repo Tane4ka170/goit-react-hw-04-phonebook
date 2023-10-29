@@ -57,11 +57,7 @@ const App = () => {
       <ContactForm onSubmit={addContact} />
       <h2 className={s.title}>Contacts</h2>
       <Filter filter={filter} filterChange={addFilter} />
-      <ContactList
-        contacts={filteredContacts}
-        deleteContact={deleteContact}
-        filter={filter}
-      />
+      <ContactList contacts={filteredContacts} deleteContact={deleteContact} />
     </div>
   );
 };
